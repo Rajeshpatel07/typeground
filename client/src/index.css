@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blink {
+0% {
+    border-left: 2px solid #cccc00;
+}
+50% {
+    border-left: 2px solid transparent;
+}
+100% {
+    border-left: 2px solid #cccc00;
+}
+}
+
+.active {
+    animation: blink 1s infinite;
+}
+
+.correct{
+    color:#cccc00;
+}
+
+.wrong{
+    color:#e60000;
+}
+
+.backgradient{
+    background-image: linear-gradient(
+  90deg,
+  hsl(0deg 0% 12%) 0%,
+  hsl(344deg 0% 12%) 11%,
+  hsl(344deg 0% 12%) 23%,
+  hsl(344deg 0% 12%) 34%,
+  hsl(344deg 0% 12%) 46%,
+  hsl(344deg 0% 12%) 57%,
+  hsl(344deg 0% 12%) 68%,
+  hsl(344deg 0% 12%) 79%,
+  hsl(344deg 0% 12%) 89%,
+  hsl(0deg 0% 12%) 100%
+);}
+
+
